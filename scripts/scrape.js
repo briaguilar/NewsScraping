@@ -17,8 +17,11 @@ var scrape = function(cb) {
         $("article").each(function(i, element) {
             // var head = $(this).children(".story-heading").text().trim();
             // var sum = $(this).children(".summary").text().trim();
-            // var link = $(element).find("a").attr("href");
-            // console.log(link);
+            var nytimes = "www.nytimes.com";
+            var link = $(element).find("a").attr("href");
+            // console.log(nytimes + link);
+            var url = nytimes + link;
+            // console.log(url);
             var head = $(element).find("h2").text();
             // console.log(title);
             var sum = $(element).find("p").text();
@@ -28,10 +31,12 @@ var scrape = function(cb) {
             if (head && sum) {
                 var headNeat = head.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
                 var sumNeat = sum.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
+                
 
                 var dataToAdd = {
                     headline: headNeat,
-                    summary: sumNeat
+                    summary: sumNeat,
+                    link: url
                 };
 
                 articles.push(dataToAdd);

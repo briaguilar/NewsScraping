@@ -57,8 +57,9 @@ $(document).ready(function() {
             "</div>",
             "<div class='panel-body'>",
             article.summary,
+            article.url,
             "</div>",
-            "</div>"
+            "</div>",
     ].join(""));
     // We attach the article's id to the jQuery element
     // We will use this when trying to figure out which article the user wants to save
