@@ -9,5 +9,5 @@ News Scraper is an app that lets users view and leave comments on the latest new
 --------------------------------------
 
 ![image](public/assets/images/screenshot.PNG?raw=true);
-![image](public\assets\images\articles.PNG?raw=true);
-![image](public\assets\images\screenshot3.PNG?raw=true);
+![image](public/assets/images/articles.PNG?raw=true);
+![image](public/assets/images/screenshot3.PNG?raw=true);
